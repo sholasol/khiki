@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khiki Limited - Property Services & Airbnb Management</title>
+    <meta name="description" content="Expert property services including Airbnb management, property sales, landlord support, and investor services. Maximize your property investment returns.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS css/style.css-->
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <div class="bg-success rounded p-2 me-2">
+                    <i class="fas fa-building text-white"></i>
+                </div>
+                <span class="fw-bold text-dark">Khiki Limited</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/properties">Properties</a>
+                    </li>
+                    {{-- <li class="nav-item">
+                        <a class="nav-link fw-medium" href="blog.html">Blog</a>
+                    </li> --}}
+                    {{-- <li class="nav-item">
+                        <a class="nav-link fw-medium" href="/contact">Contact</a>
+                    </li> --}}
+                </ul>
+
+                <div class="d-flex gap-2">
+                    <a href="/contact" class="btn btn-outline-success">Get Quote</a>
+                    <a href="/contact" class="btn btn-success">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  {{$slot}}
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="/" class="d-flex align-items-center text-white text-decoration-none mb-3">
+                        <div class="bg-success rounded p-2 me-2">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span class="fw-bold">Khiki Limited</span>
+                    </a>
+                    <p class="text-light mb-3">Your trusted partner for property services, Airbnb management, and investment solutions. Maximizing returns while minimizing your workload.</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/services" class="text-light text-decoration-none">Airbnb Management</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Project Management</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Property Sales</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Landlord Support</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Investor Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="/properties" class="text-light text-decoration-none">Properties</a></li>
+                        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="admin.html" class="text-light text-decoration-none">Admin Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fas fa-map-marker-alt text-success me-2 mt-1"></i>
+                        <div class="text-light">
+                            <p class="mb-0">123 Business Street</p>
+                            <p class="mb-0">London, UK SW1A 1AA</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-phone text-success me-2"></i>
+                        <a href="tel:+44123456789" class="text-light text-decoration-none">+44 123 456 789</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-envelope text-success me-2"></i>
+                        <a href="mailto:info@khikilimited.com" class="text-light text-decoration-none">info@khikilimited.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top border-secondary">
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-light mb-0">&copy; 2024 Khiki Limited. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
