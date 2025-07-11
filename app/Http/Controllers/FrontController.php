@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Property;
 use Illuminate\Http\Request;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -33,6 +34,15 @@ class FrontController extends Controller
     public function services()
     {
         return view('front.services');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function show($id)
+    {
+        $property = Property::findOrFail($id);
+        return view('front.property', compact('property'));
     }
 
     public function store(Request $request)

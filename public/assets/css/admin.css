@@ -1,0 +1,148 @@
+/* Admin Panel Custom CSS */
+
+:root {
+  --admin-primary: #198754;
+  --admin-secondary: #6c757d;
+  --admin-dark: #212529;
+  --admin-light: #f8f9fa;
+}
+
+/* Admin Layout */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  min-height: 100vh;
+  width: 250px;
+  transition: all 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.collapsed {
+  margin-left: -250px;
+}
+
+.sidebar .nav-link {
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--admin-primary);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  width: calc(100% - 250px);
+  transition: all 0.3s;
+}
+
+.content-wrapper.expanded {
+  width: 100%;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Border Left Cards */
+.border-left-primary {
+  border-left: 4px solid #4e73df !important;
+}
+
+.border-left-success {
+  border-left: 4px solid #1cc88a !important;
+}
+
+.border-left-info {
+  border-left: 4px solid #36b9cc !important;
+}
+
+.border-left-warning {
+  border-left: 4px solid #f6c23e !important;
+}
+
+/* Table Styling */
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  border-top: none;
+  font-weight: 600;
+  color: var(--admin-dark);
+  background-color: var(--admin-light);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(25, 135, 84, 0.05);
+}
+
+/* Button Groups */
+.btn-group-sm .btn {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Badge Styling */
+.badge {
+  font-weight: 500;
+  font-size: 0.75em;
+}
+
+/* Form Controls */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--admin-primary);
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .sidebar {
+    margin-left: -250px;
+  }
+  
+  .sidebar.collapsed {
+    margin-left: 0;
+  }
+  
+  .content-wrapper {
+    width: 100%;
+  }
+  
+  .content-wrapper.expanded {
+    width: calc(100% - 250px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+}

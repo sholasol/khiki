@@ -18,9 +18,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="/">
-                <div class="bg-success rounded p-2 me-2">
+                {{-- <div class="bg-success rounded p-2 me-2">
                     <i class="fas fa-building text-white"></i>
-                </div>
+                </div> --}}
+            <img src="{{asset('assets/logo.jpeg')}}" alt="Khiki Property Logo" class="me-2" style="height: 50px;"/>
                 <span class="fw-bold text-dark">Khiki Property</span>
             </a>
 
@@ -46,7 +47,7 @@
 
                 <div class="d-flex gap-2">
                     <a href="/contact" class="btn btn-outline-success">Get Quote</a>
-                    <a href="/contact" class="btn btn-success">Contact Us</a>
+                    <a href="/login" class="btn btn-success">Sign In</a>
                 </div>
             </div>
         </div>

@@ -146,9 +146,7 @@
         <!-- Hero Slider -->
         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                 <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Project Planning">
-                </div>
+                 
                 <div class="carousel-item active">
                     <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Luxury Property">
                 </div>
@@ -161,7 +159,9 @@
                 <div class="carousel-item">
                     <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Elegant Interior">
                 </div>
-               
+               <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Project Planning">
+                </div>
                
             </div>
             
@@ -178,10 +178,10 @@
                             Expert scheduling, programme control, and delivery strategy services across construction, infrastructure, and property sectors.
                         </p>
                         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                            <a href="contact.html" class="btn btn-success btn-lg px-4">
+                            <a href="/services" class="btn btn-success btn-lg px-4">
                                 <i class="fas fa-briefcase me-2"></i>Our Services
                             </a>
-                            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+                            <a href="/contact" class="btn btn-outline-light btn-lg px-4">
                                 Plan it right. Build it better.
                             </a>
                         </div>
@@ -424,8 +424,8 @@
             <h2 class="display-5 fw-bold mb-3">Ready to Maximize Your Property Returns?</h2>
             <p class="lead mb-4">Get a free property audit and discover how much more you could be earning from your investment properties.</p>
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                <a href="contact.html" class="btn btn-light btn-lg px-4">Get Free Property Audit</a>
-                <a href="properties.html" class="btn btn-outline-light btn-lg px-4">View Properties</a>
+                <a href="/contact" class="btn btn-light btn-lg px-4">Get Free Property Audit</a>
+                <a href="/properties" class="btn btn-outline-light btn-lg px-4">View Properties</a>
             </div>
         </div>
     </section>

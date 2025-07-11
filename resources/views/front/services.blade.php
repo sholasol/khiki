@@ -192,8 +192,8 @@
             <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Project or Property?</h2>
             <p class="lead mb-4">Get expert support tailored to your specific needs and goals.</p>
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                <a href="contact.html" class="btn btn-light btn-lg px-4">Request a Consultation</a>
-                <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                <a href="/contact" class="btn btn-light btn-lg px-4">Request a Consultation</a>
+                <a href="/contact" class="btn btn-outline-light btn-lg px-4">Learn More</a>
             </div>
         </div>
     </section>
