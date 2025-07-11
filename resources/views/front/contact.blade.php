@@ -28,7 +28,8 @@
                             <p class="text-muted mb-0">Fill out the form below and we'll get back to you within 24 hours.</p>
                         </div>
                         <div class="card-body">
-                            <form id="contactForm">
+                            <form  action="{{route('contact.store')}}" method="POST">
+                                @csrf
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="name" class="form-label">Full Name *</label>
@@ -116,7 +117,7 @@
                                 </div>
                                 <div>
                                     <h6 class="mb-1">Email Address</h6>
-                                    <a href="mailto:info@khikilimited.com" class="text-decoration-none">info@khikilimited.com</a>
+                                    <a href="mailto:info@khikiproperty.com" class="text-decoration-none">info@khikiproperty.com</a>
                                 </div>
                             </div>
                             <div class="d-flex align-items-start">

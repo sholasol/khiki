@@ -13,6 +13,7 @@ Route::get('/about', [FrontController::class, 'about'])->name('front.about');
 Route::get('/services', [FrontController::class, 'services'])->name('front.services');
 Route::get('/properties', [FrontController::class, 'properties'])->name('front.properties');
 Route::get('/contact', [FrontController::class, 'contact'])->name('front.contact');
+Route::post('/contact', [FrontController::class, 'store'])->name('contact.store');
 
 
 

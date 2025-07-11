@@ -146,8 +146,14 @@
         <!-- Hero Slider -->
         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
+                 <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Project Planning">
+                </div>
                 <div class="carousel-item active">
                     <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Luxury Property">
+                </div>
+                 <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Construction Project">
                 </div>
                 <div class="carousel-item">
                     <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Modern Apartment">
@@ -155,6 +161,8 @@
                 <div class="carousel-item">
                     <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Elegant Interior">
                 </div>
+               
+               
             </div>
             
             <div class="hero-overlay"></div>
@@ -283,10 +291,46 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- New Property Development Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body">
+                            <div class="bg-danger bg-opacity-10 rounded p-3 d-inline-block mb-3">
+                                <i class="fas fa-hammer text-danger fs-4"></i>
+                            </div>
+                            <h5 class="card-title">Property Development</h5>
+                            <p class="card-text">We acquire, refurbish, and reposition residential and commercial assets across the UK</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li><i class="fas fa-check text-success me-2"></i>Property Sourcing & Feasibility</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Residential Conversions</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Joint Ventures & Investor Partnerships</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Project Management Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm service-card">
+                        <div class="card-body">
+                            <div class="bg-secondary bg-opacity-10 rounded p-3 d-inline-block mb-3">
+                                <i class="fas fa-tasks text-secondary fs-4"></i>
+                            </div>
+                            <h5 class="card-title">Project Management & Scheduling</h5>
+                            <p class="card-text">We help construction firms and developers deliver projects on time and within budget</p>
+                            <ul class="list-unstyled small text-muted">
+                                <li><i class="fas fa-check text-success me-2"></i>Baseline Programme Development</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Critical Path & Float Analysis</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Delay Claims & EOT Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="text-center mt-5">
-                <a href="services.html" class="btn btn-success btn-lg">
+                <a href="/services" class="btn btn-success btn-lg">
                     View All Services <i class="fas fa-arrow-right ms-2"></i>
                 </a>
             </div>
