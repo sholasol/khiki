@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khiki Limited - Property Services & Airbnb Management</title>
-    <meta name="description" content="Expert property services including Airbnb management, property sales, landlord support, and investor services. Maximize your property investment returns.">
+    <title>Khiki Property & Projects Management</title>
+    <meta name="description" content="UK-based project management and planning consultancy providing expert scheduling, programme control, and property management services.">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                 <div class="bg-success rounded p-2 me-2">
                     <i class="fas fa-building text-white"></i>
                 </div>
-                <span class="fw-bold text-dark">Khiki Limited</span>
+                <span class="fw-bold text-dark">Khiki Property</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,23 +31,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-medium active" href="/">Home</a>
+                        <a class="nav-link fw-medium {{request()->routeIs('front.index') ? 'active' : ''}}" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/about">About Us</a>
+                        <a class="nav-link fw-medium {{request()->routeIs('front.about') ? 'active' : ''}}" href="/about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/services">Services</a>
+                        <a class="nav-link fw-medium {{request()->routeIs('front.services') ? 'active' : ''}}" href="/services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/properties">Properties</a>
+                        <a class="nav-link fw-medium {{request()->routeIs('front.properties') ? 'active' : ''}}" href="/properties">Properties</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link fw-medium" href="blog.html">Blog</a>
-                    </li> --}}
-                    {{-- <li class="nav-item">
-                        <a class="nav-link fw-medium" href="/contact">Contact</a>
-                    </li> --}}
                 </ul>
 
                 <div class="d-flex gap-2">
@@ -69,9 +63,9 @@
                         <div class="bg-success rounded p-2 me-2">
                             <i class="fas fa-building"></i>
                         </div>
-                        <span class="fw-bold">Khiki Limited</span>
+                        <span class="fw-bold">Khiki Property & Projects</span>
                     </a>
-                    <p class="text-light mb-3">Your trusted partner for property services, Airbnb management, and investment solutions. Maximizing returns while minimizing your workload.</p>
+                    <p class="text-light mb-3">UK-based project management and planning consultancy providing expert scheduling, programme control, and property management services.</p>
                     <div class="d-flex gap-2">
                         <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
@@ -82,11 +76,11 @@
                 <div class="col-lg-2">
                     <h5 class="mb-3">Our Services</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/services" class="text-light text-decoration-none">Airbnb Management</a></li>
                         <li><a href="/services" class="text-light text-decoration-none">Project Management</a></li>
-                        <li><a href="/services" class="text-light text-decoration-none">Property Sales</a></li>
-                        <li><a href="/services" class="text-light text-decoration-none">Landlord Support</a></li>
-                        <li><a href="/services" class="text-light text-decoration-none">Investor Services</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Tender Planning</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Delay Analysis</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Property Management</a></li>
+                        <li><a href="/services" class="text-light text-decoration-none">Airbnb Management</a></li>
                     </ul>
                 </div>
 
@@ -95,9 +89,8 @@
                     <ul class="list-unstyled">
                         <li><a href="/about" class="text-light text-decoration-none">About Us</a></li>
                         <li><a href="/properties" class="text-light text-decoration-none">Properties</a></li>
-                        <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="blog.html" class="text-light text-decoration-none">Case Studies</a></li>
                         <li><a href="/contact" class="text-light text-decoration-none">Contact</a></li>
-                        <li><a href="admin.html" class="text-light text-decoration-none">Admin Login</a></li>
                     </ul>
                 </div>
 
@@ -116,7 +109,7 @@
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="fas fa-envelope text-success me-2"></i>
-                        <a href="mailto:info@khikilimited.com" class="text-light text-decoration-none">info@khikilimited.com</a>
+                        <a href="mailto:info@khiki.co.uk" class="text-light text-decoration-none">info@khiki.co.uk</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +119,7 @@
             <div class="container py-3">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <p class="text-light mb-0">&copy; 2024 Khiki Limited. All rights reserved.</p>
+                        <p class="text-light mb-0">&copy; 2024 Khiki Property & Projects Management. All rights reserved.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>

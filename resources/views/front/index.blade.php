@@ -1,24 +1,182 @@
 <x-front-layout>
-      <!-- Hero Section -->
-    <section class="hero-section bg-dark text-white py-5">
-        <div class="hero-overlay"></div>
-        <div class="container py-5 position-relative">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-10">
-                    <span class="badge bg-success mb-3 fs-6">Trusted Property Services Partner</span>
-                    <h1 class="display-4 fw-bold mb-4">
-                        Maximize Your Property <span class="text-success">Investment Returns</span>
-                    </h1>
-                    <p class="lead mb-4 text-light">
-                        Expert Airbnb management, property sales, and investor services. Let us handle the complexities while you enjoy the profits.
-                    </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                        <a href="contact.html" class="btn btn-success btn-lg px-4">
-                            <i class="fas fa-home me-2"></i>List Your Property
-                        </a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
-                            Book Free Consultation
-                        </a>
+
+     <style>
+        .hero-section {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .carousel-item {
+            height: 100vh;
+            position: relative;
+        }
+        
+        .carousel-item img {
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .hero-badge {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        
+        .hero-title {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.8s forwards;
+        }
+        
+        .hero-subtitle {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 1.1s forwards;
+        }
+        
+        .hero-buttons {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 1.4s forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .btn-success {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.3);
+        }
+        
+        .btn-outline-light {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+        }
+        
+        .text-success {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            z-index: 3;
+        }
+        
+        .carousel-indicators {
+            z-index: 3;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                width: 95%;
+                padding: 0 15px;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem !important;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem !important;
+            }
+        }
+    </style>
+
+
+      <!-- Hero Section with Image Slider -->
+      <section class="hero-section position-relative">
+        <!-- Hero Slider -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Luxury Property">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Modern Apartment">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100" alt="Elegant Interior">
+                </div>
+            </div>
+            
+            <div class="hero-overlay"></div>
+            <div class="container position-absolute top-50 start-50 translate-middle z-10 hero-content text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <span class="badge bg-success mb-3 fs-6">UK-Based Consultancy</span>
+                        <h1 class="display-4 fw-bold mb-3 text-white">
+                            Khiki Property & Projects Management
+                        </h1>
+                        <h2 class="h3 fw-light mb-4 text-white">Building Certainty Through Planning Excellence</h2>
+                        <p class="lead mb-4 text-white">
+                            Expert scheduling, programme control, and delivery strategy services across construction, infrastructure, and property sectors.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <a href="contact.html" class="btn btn-success btn-lg px-4">
+                                <i class="fas fa-briefcase me-2"></i>Our Services
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+                                Plan it right. Build it better.
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -227,4 +385,5 @@
             </div>
         </div>
     </section>
+
 </x-front-layout>
