@@ -15,7 +15,8 @@ class FrontController extends Controller
      */
     public function index()
     {
-        return view('front.index');
+        $propertys = Property::latest()->take(8)->get();    
+        return view('front.index', compact('propertys'));
     }
 
     public function about()
@@ -24,7 +25,8 @@ class FrontController extends Controller
     }
     public function properties()
     {
-        return view('front.properties');
+        $properties = Property::latest()->paginate(9);
+        return view('front.properties', compact('properties'));
     }
     public function contact()
     {

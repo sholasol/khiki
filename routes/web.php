@@ -25,7 +25,7 @@ Route::get('/property/{id}', [FrontController::class, 'show'])->name('front.prop
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
-    Route::get('/properties', [AdminController::class, 'properties'])->name('admin.properties');
+    Route::get('/propertys', [AdminController::class, 'properties'])->name('admin.properties');
     Route::get('/createProperty', [AdminController::class, 'create'])->name('createProperty');  
     Route::get('/showProperty/{id}', [AdminController::class, 'show'])->name('show.property');  
     Route::post('/createProperty', [AdminController::class, 'store'])->name('store.property');
