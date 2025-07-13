@@ -61,8 +61,9 @@
             <div class="row g-4">
                 <div class="col-lg-3">
                     <a href="/" class="d-flex align-items-center text-white text-decoration-none mb-3">
-                        <div class="bg-success rounded p-2 me-2">
-                            <i class="fas fa-building"></i>
+                        <div class="bg-white rounded p-2 me-2">
+                            {{-- <i class="fas fa-building"></i> --}}
+                            <img src="{{asset('assets/logo.jpeg')}}" alt="Khiki Property Logo" class="me-2" style="height: 50px;"/>
                         </div>
                         <span class="fw-bold">Khiki Property & Projects</span>
                     </a>

@@ -23,7 +23,7 @@
                     <div class="card h-100 shadow-sm service-card">
                         <div class="card-body">
                             <div class="bg-success bg-opacity-10 rounded p-3 d-inline-block mb-3">
-                                <i class="fas fa-tools text-success fs-4"></i>
+                                <i class="fas fa-tools text-white fs-4"></i>
                             </div>
                             <h5 class="card-title">Pre-Construction & Tender Planning</h5>
                             <ul class="list-unstyled small text-muted">
@@ -103,7 +103,7 @@
                     <div class="card h-100 shadow-sm service-card">
                         <div class="card-body">
                             <div class="bg-success bg-opacity-10 rounded p-3 d-inline-block mb-3">
-                                <i class="fas fa-home text-success fs-4"></i>
+                                <i class="fas fa-home text-white fs-4"></i>
                             </div>
                             <h5 class="card-title">Short Let & Airbnb Management</h5>
                             <p class="card-text">Complete Airbnb hosting solutions from listing optimization to guest management</p>

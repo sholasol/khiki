@@ -40,7 +40,7 @@
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-4">
                                 <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3">
-                                    <i class="fas fa-hard-hat text-success fs-3"></i>
+                                    <i class="fas fa-hard-hat text-white fs-3"></i>
                                 </div>
                                 <h3 class="mb-0">Our Project Management Arm</h3>
                             </div>
@@ -80,7 +80,7 @@
                     <div class="card h-100 text-center value-card border-0 shadow-sm">
                         <div class="card-body">
                             <div class="bg-success bg-opacity-10 rounded-circle p-4 d-inline-block mb-3">
-                                <i class="fas fa-bullseye text-success fs-2"></i>
+                                <i class="fas fa-bullseye text-white fs-2"></i>
                             </div>
                             <h5 class="card-title">Our Mission</h5>
                             <p class="card-text">To deliver seamless, structured, and profitable property and project experiences by combining deep industry knowledge with a personal, responsive service model.</p>
@@ -119,13 +119,29 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 text-center team-card border-0 shadow-sm">
                         <div class="card-body">
-                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" 
+                            <img src="{{asset('assets/team.png')}}" 
                                  class="rounded-circle mb-3" width="120" height="120" alt="Thomas Omotoso">
                             <h5 class="card-title">Thomas Omotoso</h5>
                             <p class="text-success fw-medium">Principal Planner & Managing Director</p>
                             <p class="card-text">15+ years in project planning and civil engineering, with experience across residential, commercial, and infrastructure projects in the UK, Qatar, and Nigeria.</p>
                             <p class="small text-muted">Specialism: Primavera P6 scheduling, NEC programming, and dispute resolution.</p>
                             <p class="small text-muted">Credentials: MSc Civil Engineering, CSCS Certified, NEC4 Practitioner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center team-card border-0 shadow-sm">
+                        <div class="card-body">
+                            <img src="{{asset('assets/team2.png')}}" 
+                                 class="rounded-circle mb-3" width="120" height="120" alt="Thomas Omotoso">
+                            <h5 class="card-title">Saheed Bolaji Adekoya </h5>
+                            <p class="text-success fw-medium">Certified Health, Safety & Environment (HSE) professional</p>
+                            <p class="card-text">
+                                With over 15 years of international experience across the construction, infrastructure, power, 
+                                 risk management, workplace safety, and regulatory compliance.
+                            </p>
+                            <p class="small text-muted">Specialism: Health, Safety & Environment, NVQ assessor, and Mental Health Support.</p>
+                            <p class="small text-muted">Credentials: MSc in Safety, Health & Environment, ISO 45001 Lead Auditor</p>
                         </div>
                     </div>
                 </div>
@@ -138,7 +154,7 @@
         <div class="container text-center">
             <h2 class="display-5 fw-bold mb-3">Ready to Work Together?</h2>
             <p class="lead mb-4">Let's discuss how we can help you achieve your property or project goals.</p>
-            <a href="contact.html" class="btn btn-success btn-lg">
+            <a href="/contact" class="btn btn-success btn-lg">
                 Get in Touch <i class="fas fa-arrow-right ms-2"></i>
             </a>
         </div>
